@@ -33,7 +33,7 @@ for codigo in codigos:
     # Verificar se tem escrito "CPR" e "130,00". 
     
     # Procurando o elemento no HTML
-    cpr = soup.find('td', text='AVALIACAO P/FUNCAO  NF 0000001 CPR 01/03')
+    cpr = soup.find('td', text='AVALIACAO 01/03')
  
     if cpr:
         numero_elemento = cpr.find_next('font', attrs={'size': '3'})
